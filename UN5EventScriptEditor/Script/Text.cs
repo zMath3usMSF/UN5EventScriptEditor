@@ -45,7 +45,7 @@ namespace UN5EventScriptEditor
                     result = ReadClosePrintMessage(ms);
                     break;
                 case 0xC8:
-                    result = ReadShowActAnimation(ms);
+                    result = ReadStartActAnimation(ms);
                     break;
                 case 0xCB:
                     result = ReadShowGroupInfo(ms);
@@ -95,7 +95,7 @@ namespace UN5EventScriptEditor
                     options.Add(option);
                 }
             }
-            string result = ScriptReader.Tab() + "SHOW_ANSWER_MESSAGE_BOX " + string.Join(" ", options);
+            string result = ScriptReader.Tab() + "SHOW_ANSWER_BOX " + string.Join(" ", options);
             return result;
         }
         public static string ReadCloseAnswerMessageBox(MemoryStream ms)
@@ -103,7 +103,7 @@ namespace UN5EventScriptEditor
             ms.Seek(0x2, SeekOrigin.Current);
             int arg1 = Util.ReadInt32(ms);
             int arg2 = Util.ReadInt32(ms);
-            string result = ScriptReader.Tab() + "CLOSE_ANSWER_MESSAGE_BOX " + $"{arg1} {arg2}";
+            string result = ScriptReader.Tab() + "CLOSE_ANSWER_BOX " + $"{arg1} {arg2}";
             ms.Seek(0x1C, SeekOrigin.Current);
             return result;
         }
@@ -111,13 +111,13 @@ namespace UN5EventScriptEditor
         {
             ms.Seek(0x2, SeekOrigin.Current);
             int arg1 = Util.ReadInt32(ms);
-            string result = ScriptReader.Tab() + "SHOW_OBTAINED_ITEM " + $"{arg1}";
+            string result = ScriptReader.Tab() + "SHOW_OBTAINED_ITEM_MESSAGE " + $"{arg1}";
             ms.Seek(0x20, SeekOrigin.Current);
             return result;
         }
         public static string ReadCloseMessageBoxItem(MemoryStream ms)
         {
-            string result = ScriptReader.Tab() + "CLOSE_MESSAGE_BOX_ITEM";
+            string result = ScriptReader.Tab() + "CLOSE_MESSAGE_ITEM_MESSAGE";
             ms.Seek(0x26, SeekOrigin.Current);
             return result;
         }
@@ -149,11 +149,11 @@ namespace UN5EventScriptEditor
             ms.Seek(0x26, SeekOrigin.Current);
             return result;
         }
-        public static string ReadShowActAnimation(MemoryStream ms)
+        public static string ReadStartActAnimation(MemoryStream ms)
         {
             ms.Seek(0x2, SeekOrigin.Current);
             int arg1 = Util.ReadInt32(ms);
-            string result = ScriptReader.Tab() + "SHOW_ACT_ANIMATION " + $"{arg1}";
+            string result = ScriptReader.Tab() + "START_ACT_ANIMATION " + $"{arg1}";
             ms.Seek(0x20, SeekOrigin.Current);
             return result;
         }

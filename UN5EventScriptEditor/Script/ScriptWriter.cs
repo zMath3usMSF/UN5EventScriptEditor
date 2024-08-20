@@ -447,31 +447,31 @@ namespace UN5EventScriptEditor
             { "UNLOCK_CAMERA", new byte[] { 0x2B, 0x00, 0xB8, 0x00 } },
             { "SHOW_DIALOGUE", new byte[] { 0x2C, 0x00, 0xBE, 0x00 } },
             { "CLOSE_DIALOGUE", new byte[] { 0x2C, 0x00, 0xBF, 0x00 } },
-            { "SHOW_ANSWER_MESSAGE_BOX", new byte[] { 0x2C, 0x00, 0xC0, 0x00 } },
-            { "CLOSE_ANSWER_MESSAGE_BOX", new byte[] { 0x2C, 0x00, 0xC1, 0x00 } },
-            { "SHOW_OBTAINED_ITEM", new byte[] { 0x2C, 0x00, 0xC2, 0x00 } },
-            { "CLOSE_MESSAGE_BOX_ITEM", new byte[] { 0x2C, 0x00, 0xC3, 0x00 } },
+            { "SHOW_ANSWER_BOX", new byte[] { 0x2C, 0x00, 0xC0, 0x00 } },
+            { "CLOSE_ANSWER_BOX", new byte[] { 0x2C, 0x00, 0xC1, 0x00 } },
+            { "SHOW_OBTAINED_ITEM_MESSAGE", new byte[] { 0x2C, 0x00, 0xC2, 0x00 } },
+            { "CLOSE_OBTAINED_ITEM_MESSAGE", new byte[] { 0x2C, 0x00, 0xC3, 0x00 } },
             { "SHOW_MESSAGE_BOX_TXT", new byte[] { 0x2C, 0x00, 0xC4, 0x00 } },
             { "CLOSE_MESSAGE_BOX_TXT", new byte[] { 0x2C, 0x00, 0xC5, 0x00 } },
-            { "SHOW_PRINT_MESSAGE", new byte[] { 0x2C, 0x00, 0xC6, 0x00 } },
-            { "CLOSE_PRINT_MESSAGE", new byte[] { 0x2C, 0x00, 0xC7, 0x00 } },
-            { "SHOW_ACT_ANIMATION", new byte[] { 0x2C, 0x00, 0xC8, 0x00 } },
-            { "SHOW_GROUP_INFO", new byte[] { 0x2C, 0x00, 0xCB, 0x00 } },
-            { "START_SCREEN_TRANSITION_EFFECT", new byte[] { 0x2D, 0x00, 0xCD, 0x00 } },
+            { "SHOW_PRINT_MESSAGE", new byte[] { 0x2C, 0x00, 0xC6, 0x00 } }, //
+            { "CLOSE_PRINT_MESSAGE", new byte[] { 0x2C, 0x00, 0xC7, 0x00 } }, //
+            { "START_ACT_ANIMATION", new byte[] { 0x2C, 0x00, 0xC8, 0x00 } },
+            { "SHOW_GROUP_INFO", new byte[] { 0x2C, 0x00, 0xCB, 0x00 } }, //
+            { "START_SCREEN_TRANSITION_EFFECT", new byte[] { 0x2D, 0x00, 0xCD, 0x00 } }, //
             { "START_2D_BATTLE", new byte[] { 0x2E, 0x00, 0xD4, 0x00 } },
             { "START_3D_BATTLE", new byte[] { 0x2E, 0x00, 0xD6, 0x00 } },
-            { "ADD_TO_3D_BATTLE", new byte[] { 0x2E, 0x00, 0xD7, 0x00 } },
+            { "ADD_TO_3D_BATTLE", new byte[] { 0x2E, 0x00, 0xD7, 0x00 } }, //
             { "START_CUTSCENE", new byte[] { 0x2E, 0x00, 0xD8, 0x00 } },
             { "SHOW_SAVE_OPTION", new byte[] { 0x2E, 0x00, 0xD9, 0x00 } },
             { "SHOW_LETTER", new byte[] { 0x2E, 0x00, 0xDA, 0x00 } },
             { "INDICATE_OBJECTIVE_ON_STAGE", new byte[] { 0x2E, 0x00, 0xDB, 0x00 } },
-            { "SHOW_SPECIAL_CHAPTER_BACKGROUND", new byte[] { 0x2E, 0x00, 0xDC, 0x00 } },
+            { "SHOW_SPECIAL_CHAPTER_BACKGROUND", new byte[] { 0x2E, 0x00, 0xDC, 0x00 } }, //
             { "START_TIME_ATTACK", new byte[] { 0x2E, 0x00, 0xDF, 0x00 } },
             { "DISABLE_BANDITS_ON_STAGE", new byte[] { 0x2E, 0x00, 0xE1, 0x00 } },
-            { "SHOW_SHOP_MENU", new byte[] { 0x2E, 0x00, 0xF2, 0x00 } },
-            { "SHOW_RECORD_MENU", new byte[] { 0x2E, 0x00, 0xF3, 0x00 } },
+            { "SHOW_SHOP_MENU", new byte[] { 0x2E, 0x00, 0xF2, 0x00 } }, //
+            { "SHOW_RECORD_MENU", new byte[] { 0x2E, 0x00, 0xF3, 0x00 } }, //
             { "SHOW_INFOMATION", new byte[] { 0x2E, 0x00, 0xF4, 0x00 } },
-            { "SHOW_MISSION_RESULT", new byte[] { 0x2E, 0x00, 0xF5, 0x00 } },
+            { "SHOW_MISSION_RESULT", new byte[] { 0x2E, 0x00, 0xF5, 0x00 } }, //
             { "SPAWN_TRAP", new byte[] { 0x2E, 0x00, 0xF7, 0x00 } },
             { "START_RETRY_MENU", new byte[] { 0x2E, 0x00, 0x00, 0x01 } },
             { "SHOW_EDIT_GROUP_MENU", new byte[] { 0x2E, 0x00, 0x01, 0x01 } },
